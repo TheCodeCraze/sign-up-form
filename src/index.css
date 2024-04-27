@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 1440px;
+}
+
+body {
+  height: 800px;
+  background: url("/bg-intro-desktop.png") center center no-repeat var(--red);
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+}

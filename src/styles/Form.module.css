@@ -1,0 +1,136 @@
+.container {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.button-trial {
+  width: 100%;
+  height: 60px;
+  background: var(--blue);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.1469);
+  cursor: pointer;
+}
+
+.button-trial > span {
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  padding: 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.1469);
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  height: 56px;
+  padding: 15px 32px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-blue);
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  outline: none;
+  border: none;
+  caret-color: var(--blue);
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  opacity: 0.75;
+}
+
+input:focus {
+  border: 1px solid var(--blue);
+}
+
+input[name="email"].error::placeholder {
+  color: var(--red);
+  opacity: 1;
+}
+
+.error {
+  padding: 14px 31px;
+  border: 2px solid var(--red);
+}
+
+.error-message {
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--red);
+}
+
+.error-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.button-form {
+  width: 100%;
+  height: 56px;
+  background: var(--green);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 26px;
+  letter-spacing: 1.25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 0 -4px 0 0 hsla(0, 0%, 0%, 0.0909);
+  cursor: pointer;
+}
+
+.button-form:hover {
+  background: #77e2b3;
+}
+
+.terms {
+  margin-top: -12px;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--grayish-blue);
+  line-height: 26px;
+  text-align: center;
+}
+
+.terms > span {
+  font-weight: 700;
+  color: var(--red);
+  padding-left: 2.5px;
+  cursor: pointer;
+}
+
+.terms > span:hover {
+  text-decoration: 1px underline var(--red);
+}
