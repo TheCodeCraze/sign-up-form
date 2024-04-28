@@ -134,3 +134,33 @@ input[name="email"].error::placeholder {
 .terms > span:hover {
   text-decoration: 1px underline var(--red);
 }
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+
+  .button-trial {
+    height: 88px;
+    padding: 0 66px;
+  }
+
+  .form {
+    padding: 24px;
+    gap: 16px;
+  }
+
+  input {
+    padding: 15px 19.41px;
+  }
+
+  .error {
+    padding: 14px 18.41px;
+  }
+
+  .terms {
+    margin-top: -10px;
+    padding: 0 15px;
+    line-height: 21px;
+  }
+}

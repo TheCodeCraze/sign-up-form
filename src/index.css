@@ -27,3 +27,25 @@ body {
   display: grid;
   place-items: center;
 }
+
+@media screen and (max-width: 1085px) {
+  body {
+    height: auto;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    padding: 88px 24px 68px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  body {
+    background: url("/bg-intro-mobile.png") top left no-repeat var(--red);
+  }
+}
